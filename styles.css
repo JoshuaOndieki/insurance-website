@@ -593,3 +593,14 @@ footer ion-icon {
         display: none;
     }
 }
+
+
+@media (max-height: 767px) {
+    #major-text {
+        width: 95%;
+    }
+    
+    #minor-text {
+        width: 85%;
+    }
+}
