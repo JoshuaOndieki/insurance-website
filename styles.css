@@ -36,7 +36,8 @@ body::before {
 
 #insurance-benefits-cards>div {
     background-color: white;
-    color: black;
+    color: var(--color-blue-black);
+    flex: 1;
     padding-left: 2rem;
     padding-right: 3rem;
     padding-top: 1rem;
@@ -44,7 +45,7 @@ body::before {
 }
 
 #insurance-benefits-cards>:last-child {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     color: white;
 }
 
@@ -99,7 +100,7 @@ summary::-webkit-details-maker {
 }
 
 #signup {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     border-radius: 0.5rem;
     padding: 1rem;
 }
@@ -109,7 +110,7 @@ ion-icon[name="arrow-forward-outline"] {
 }
 
 ion-icon[name="people-outline"] {
-    color: #23a6f0;
+    color: var(--color-blue);
 }
 
 #insurance-benefits-cards>:last-child>ion-icon {
@@ -117,6 +118,7 @@ ion-icon[name="people-outline"] {
 }
 
 #logo {
+    cursor: pointer;
     font-size: xx-large;
 }
 
@@ -124,6 +126,10 @@ nav ul{
     column-gap: 1rem;
     display: flex;
     list-style-type: none;
+}
+
+nav ul li {
+    cursor: pointer;
 }
 
 a {
@@ -159,7 +165,7 @@ section {
 }
 
 #get-quote {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
 }
 
 #learn-more {
@@ -193,7 +199,7 @@ main {
 #insurance-benefits {
     align-items: center;
     background-color: white;
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -211,13 +217,13 @@ main {
 }
 
 #insurance-benefits ion-icon {
-    color: #23a6f0;
+    color: var(--color-blue);
     display: block;
     font-size: 5rem;
 }
 
 #industry {
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -295,13 +301,13 @@ main {
 }
 
 #newsletter-subscribe>form>input[type="submit"] {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     border: none;
     padding: 1rem;
 }
 
 #pricing {
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -316,7 +322,7 @@ main {
 }
 
 .package {
-    border: 1px solid #23a6f0;
+    border: 1px solid var(--color-blue);
     border-radius: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -326,7 +332,7 @@ main {
 }
 
 .package>a {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     border-radius: 0.5rem;
     color: white;
     height: 3rem;
@@ -335,7 +341,7 @@ main {
 }
 
 .package-price {
-    color: #23a6f0;
+    color: var(--color-blue);
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -426,7 +432,7 @@ main {
 #book-appointment {
     align-items: center;
     background-color: white;
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     gap: 2rem;
     /* height: 80svh; */
@@ -460,20 +466,20 @@ main {
 }
 
 #book-appointment-form>input[type="submit"] {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     color: white;
 }
 
 
 #contact-us {
     align-items: center;
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     justify-content: space-between;
 }
 
 #contact-us>a {
-    background-color: #23a6f0;
+    background-color: var(--color-blue);
     border-radius: 0.5rem;
     height: 2rem;
     line-height: 2rem;
@@ -482,14 +488,14 @@ main {
 
 footer {
     background-color: white;
-    color: black;
+    color: var(--color-blue-black);
     padding: 3rem 0;
     width: 100%;
 }
 
 
 footer a{
-    color: black;
+    color: var(--color-blue-black);
     height: 2rem;
     line-height: 2rem;
     vertical-align: middle;
@@ -506,7 +512,7 @@ footer address br {
 }
 
 footer ion-icon {
-    color: #23a6f0;
+    color: var(--color-blue);
     padding-right: 1rem;
 }
 
@@ -520,20 +526,20 @@ footer ion-icon {
 
 #attribution {
     align-items: center;
-    color: black;
+    color: var(--color-blue-black);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 #attribution a {
-    color: black;
+    color: var(--color-blue-black);
     display: inline;
     text-decoration: underline;
 }
 
 #attribution ion-icon {
-    color: #23a6f0;
+    color: var(--color-blue);
 }
 
 
@@ -602,5 +608,24 @@ footer ion-icon {
     
     #minor-text {
         width: 85%;
+    }
+}
+
+
+@media (max-width: 1100px) {
+    #major-text {
+        width: 95%;
+    }
+    
+    #minor-text {
+        width: 85%;
+    }
+
+    header, section {
+        width: 95%;
+    }
+
+    #insurance-benefits-cards>div {
+        flex: 1;
     }
 }

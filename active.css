@@ -1,0 +1,7 @@
+nav ul li:hover, #login:hover, footer a:hover {
+    border-bottom: 2px solid var(--color-blue);
+}
+
+.blue-btn:hover, #signup:hover, #get-quote:hover, #book-appointment-form>input[type="submit"]:hover, #contact-us>a:hover, #newsletter-subscribe input[type="submit"]:hover {
+    background-color: var(--color-lighter-blue);
+}
