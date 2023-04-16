@@ -168,10 +168,6 @@ main {
 }
 
 
-footer {
-    color: black;
-}
-
 #insurance-benefits {
     align-items: center;
     background-color: white;
@@ -455,4 +451,61 @@ footer {
     height: 2rem;
     line-height: 2rem;
     padding: 0.5rem 2rem;
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 3rem 0;
+    width: 100%;
+}
+
+
+footer a{
+    color: black;
+    /* padding: 0.5rem 0; */
+    height: 2rem;
+    line-height: 2rem;
+    vertical-align: middle;
+}
+
+footer address {
+    align-items: center;
+    display: flex;
+    font-style: normal;
+}
+
+footer address br {
+    display: none;
+}
+
+footer ion-icon {
+    color: #23a6f0;
+    padding-right: 1rem;
+}
+
+#footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: auto;
+}
+
+
+#attribution {
+    align-items: center;
+    color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#attribution a {
+    color: black;
+    display: inline;
+    text-decoration: underline;
+}
+
+#attribution ion-icon {
+    color: #23a6f0;
 }
