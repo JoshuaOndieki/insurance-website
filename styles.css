@@ -348,3 +348,95 @@ footer {
     display: flex;
     gap: 0.5rem;
 }
+
+#branches {
+    align-items: flex-end;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    min-height: 100svh;
+    position: relative;
+    width: 100%;
+}
+
+#branches::before {
+    background-color: #252b42;
+    background-repeat: no-repeat;
+    background-size: 100% 100svh;
+    content: "";
+    height: 100svh;
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 50%; */
+    inset: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+#branches-section {
+    align-items: center;
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+    gap: 20svh;
+    justify-content: center;
+    margin-top: 10svh;
+}
+
+
+#world-svg {
+    width: 40%;
+}
+
+#branches-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+#branches-info>div {
+    width: 32rem;
+}
+
+
+#book-appointment {
+    align-items: center;
+    background-color: white;
+    color: black;
+    display: flex;
+    gap: 2rem;
+    height: 80svh;
+    width: 75%;
+}
+
+#book-appointment>img {
+    height: 100%;
+}
+
+#book-appointment>div {
+    flex: 1;
+    text-align: center;
+}
+
+#book-appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    text-align: left;
+}
+
+#book-appointment-form>input, select {
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.5rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
+
+#book-appointment-form>input[type="submit"] {
+    background-color: #23a6f0;
+    color: white;
+}
