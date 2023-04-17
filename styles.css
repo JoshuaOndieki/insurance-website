@@ -358,7 +358,7 @@ main {
 #standard-package {
     background-color: #252b42;
     color: white;
-    flex-grow: 1;
+    /* flex-grow: 1; */
     margin: 0 auto;
 }
 
